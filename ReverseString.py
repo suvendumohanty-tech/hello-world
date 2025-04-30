@@ -1,7 +1,10 @@
 def reverse_string(s):
-    # This function takes a string as input and returns its reverse using slicing
-    return s[::-1]
+    result = []
+    for char in s:
+        result.insert(0, char)
+    return ''.join(result)
 
 # Example usage
-text = "hello world"
-print("Reversed string:", reverse_string(text))
+input_str = "hello"
+reversed_str = reverse_string(input_str)
+print(reversed_str)
